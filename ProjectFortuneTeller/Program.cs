@@ -60,17 +60,25 @@ namespace ProjectFortuneTeller
 
                 Console.WriteLine("what's your birth month");
                 string birthmonth = Console.ReadLine();
-                if (birthmonth.ToUpper() == "QUIT")
-                {
-                    Console.WriteLine("Nobody likes a quitter...");
-                    break;
-                }
-               else if (birthmonth.ToUpper() == "RESTART")
-                {
-                    continue;
-                }
 
-                Console.WriteLine("what's your favorite color");
+                while (birthmonth.ToUpper() != "JANUARY" && birthmonth.ToUpper() != "FEBUARY" && birthmonth.ToUpper() != "MARCH" && birthmonth.ToUpper() != "APRIL" && birthmonth.ToUpper() != "MAY" && birthmonth.ToUpper() != "JUNE" && birthmonth.ToUpper() != "JULY" && birthmonth.ToUpper() != "AUGUST" && birthmonth.ToUpper() != "SEPTEMBER" && birthmonth.ToUpper() != "OCTOBER" && birthmonth.ToUpper() != "NOVEMBER" &&   birthmonth.ToUpper() != "DECEMBER" && birthmonth.ToUpper() != "QUIT" && birthmonth.ToUpper
+                    () != "RESTART")
+                    {
+                    Console.WriteLine("what's your birth month");
+                    birthmonth = Console.ReadLine();
+                    }
+
+                    if (birthmonth.ToUpper() == "QUIT")
+                    {
+                        Console.WriteLine("Nobody likes a quitter...");
+                        break;
+                    }
+                    else if (birthmonth.ToUpper() == "RESTART")
+                    {
+                        continue;
+                    }
+
+                 Console.WriteLine("what's your favorite color");
                 Console.WriteLine("Pleae enter \"Help\" if you dont know what's ROYGBIV");
                 string ROYGBIV = Console.ReadLine();
                 if (ROYGBIV.ToUpper() == "QUIT")
