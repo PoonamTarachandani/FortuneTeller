@@ -177,7 +177,7 @@ namespace ProjectFortuneTeller
 
                 Console.WriteLine(firstname + " " + lastname + " will retire in " + retirementyears + " years with $" + bankbalance + " in the bank, a vacation home in " + location + " and a " + transportation + ".");
 
-                Console.WriteLine("Would u like to try again?(Yes(y)/No(n)) : ");
+                Console.WriteLine("Would u like to try again?(Yes/No) : ");
                 tryAgain = Console.ReadLine();
 
             }
